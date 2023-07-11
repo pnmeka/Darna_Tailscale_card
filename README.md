@@ -14,7 +14,7 @@ The steps are as follows:
                        $cp variables.py /Darna_Tailscale_card
 
 4. Run tailscale_setup.py
-   
+                       $cd Darna_Tailscale_card
                        $python3 tailscale_setup.py
 
 6. If the browser doesnt open up, then open <ip_address>:8240 and complete setup
