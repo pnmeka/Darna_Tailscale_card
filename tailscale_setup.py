@@ -15,7 +15,7 @@ image = "tailscale/tailscale:v1.40.1@sha256:08dd1f465d6e96192b36c10f4366b3988bc6
 
 command1 = ["sudo", "docker", "pull", image]
 
-command2 = f"sudo docker run --network=host -p 8240:8240 -v {HS_path}:/var/lib {image} sh -c 'tailscale web --listen 0.0.0.0:8240 & exec tailscaled --tun=userspace-networking'"
+command2 = f"sudo docker run --network=host -p 8240:8240 -v {HS_path}:/var/lib {image} --restart=on-failure sh -c 'tailscale web --listen 0.0.0.0:8240 & exec tailscaled --tun=userspace-networking'"
 
 url =f"http://{ip_address}:8240"
 # Run the command using os.system
