@@ -33,8 +33,9 @@ with open(f'{file_path}/tail_script.js', 'r') as file:
 if len(lines) >= 3:
     del lines[-4:]
 
+lines.append("document.addEventListener('DOMContentLoaded', function() {\n")
 lines.append("   var link = document.getElementById('dynamic-link');\n")
-lines.append(f"   link.href = \"{ip_address}:8240\";\n")
+lines.append(f"   link.href = \"http://{ip_address}:8240\";\n")
 lines.append("});")
 
 with open(f'{file_path}/tail_script.js', 'w') as file:
