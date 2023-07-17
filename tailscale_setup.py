@@ -31,7 +31,7 @@ with open('tail_script.js', 'r') as file:
     lines = file.readlines()
 
 if len(lines) >= 3:
-    del lines[-3:]
+    del lines[-4:]
 
 lines.append("   var link = document.getElementById('dynamic-link');\n")
 lines.append(f"   link.href = \"{ip_address}:8240\";\n")
