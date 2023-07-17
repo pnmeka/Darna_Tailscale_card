@@ -27,7 +27,7 @@ webbrowser.open(url)
 
 file_path = f'{HS_path}/static/'
 
-with open('tail_script.js', 'r') as file:
+with open(f'{file_path}/tail_script.js', 'r') as file:
     lines = file.readlines()
 
 if len(lines) >= 3:
@@ -37,5 +37,5 @@ lines.append("   var link = document.getElementById('dynamic-link');\n")
 lines.append(f"   link.href = \"{ip_address}:8240\";\n")
 lines.append("});")
 
-with open('tail_script.js', 'w') as file:
+with open(f'{file_path}/tail_script.js', 'w') as file:
     file.writelines(lines)
