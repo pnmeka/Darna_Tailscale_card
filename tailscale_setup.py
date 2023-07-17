@@ -21,7 +21,7 @@ url =f"http://{ip_address}:8240"
 # Run the command using os.system
 subprocess.run(command1, check=True)
 os.system(command2)
-webbrowser.open(url)
+
 
 #write to static/tail_script.js
 
@@ -40,3 +40,5 @@ lines.append("});")
 
 with open(f'{file_path}/tail_script.js', 'w') as file:
     file.writelines(lines)
+
+webbrowser.open(url)
