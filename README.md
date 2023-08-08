@@ -28,6 +28,9 @@ Git clone the repo:
 7. Access the Darna server remotely from outside using IP address provided by Tailscale. Eg IP_Tailscale:3001 and Grafana dashboards from IP_Tailscale:3000 where IP_Tailscale is the IP_address provided by Tailscale.
 
 8. Final step is to edit the variables.py file in the Health_server directory. Replace ip_address with the new IP_Tailscale address.
+
+https://github.com/seapoe1809/assets/blob/main/darna_local_assets/IMG_5790.jpeg
+https://github.com/pnmeka/pnmeka/blob/main/IMG_5808.jpeg
    Eg. in variables.py, replace ip_address="192.168.99.99" with ip_address="100.18.12.14" where the 100.18.12.14 is the IP_Tailscale address.
 
 
