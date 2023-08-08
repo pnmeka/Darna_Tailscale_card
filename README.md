@@ -35,6 +35,6 @@ Git clone the repo:
 Note:
 Please note this program only sets up a free linux account in Tailscale. The writer of this program isnt affiliated in anyway with Tailscale.
 
+<img src="hhttps://github.com/seapoe1809/assets/blob/main/darna_local_assets/IMG_5790.jpeg" width =200, height=400>
+<img src="https://github.com/pnmeka/pnmeka/blob/main/IMG_5808.jpeg" width =200, height=400>
 
-<img "https://github.com/seapoe1809/assets/blob/main/darna_local_assets/IMG_5790.jpeg" /img>
-<img "https://github.com/pnmeka/pnmeka/blob/main/IMG_5808.jpeg" /img>
