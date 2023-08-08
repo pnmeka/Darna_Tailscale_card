@@ -29,10 +29,12 @@ Git clone the repo:
 
 8. Final step is to edit the variables.py file in the Health_server directory. Replace ip_address with the new IP_Tailscale address.
 
-https://github.com/seapoe1809/assets/blob/main/darna_local_assets/IMG_5790.jpeg
-https://github.com/pnmeka/pnmeka/blob/main/IMG_5808.jpeg
    Eg. in variables.py, replace ip_address="192.168.99.99" with ip_address="100.18.12.14" where the 100.18.12.14 is the IP_Tailscale address.
 
 
 Note:
 Please note this program only sets up a free linux account in Tailscale. The writer of this program isnt affiliated in anyway with Tailscale.
+
+
+<img "https://github.com/seapoe1809/assets/blob/main/darna_local_assets/IMG_5790.jpeg" /img>
+<img "https://github.com/pnmeka/pnmeka/blob/main/IMG_5808.jpeg" /img>
