@@ -29,7 +29,9 @@ Git clone the repo:
 
 8. Final step is to edit the variables.py file in the Health_server directory. Replace ip_address with the new IP_Tailscale address.
 
-   Eg. in variables.py, replace ip_address="192.168.99.99" with ip_address="100.18.12.14" where the 100.18.12.14 is the IP_Tailscale address.
+   Eg. in /Health_server/variables.py, replace ip_address="192.168.99.99" with ip_address="100.18.12.14" where the 100.18.12.14 is the IP_Tailscale address.
+
+9. restart darna.py
 
 
 Note:
