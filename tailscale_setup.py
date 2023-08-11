@@ -1,12 +1,24 @@
 #Set Up Tailscale card
-
-import variables
 import subprocess
 import os
 import webbrowser
+import shutil
 
-#importing variables from variables.py
-HS_path = variables.HS_path
+# Get current dir and parent dir
+current_dir = os.getcwd()
+HS_path = os.path.dirname(current_dir)
+
+# Construct the source and destination paths for copying
+source_path = os.path.join(HS_path, "variables.py")
+destination_path = os.path.join(f"{current_dir}", "variables.py")
+
+# Copy the variables.py file
+shutil.copy(source_path, destination_path)
+
+# Import variables from the copied module
+import variables
+
+# Access variables from the imported module
 ip_address = variables.ip_address
 
 
@@ -20,7 +32,7 @@ command2 = f"sudo docker run --network=host -p 8240:8240 -v {HS_path}:/var/lib {
 url =f"http://{ip_address}:8240"
 # Run the command using os.system
 subprocess.run(command1, check=True)
-os.system(command2)
+subprocess.Popen(command2, shell=True)
 
 
 #write to static/tail_script.js
